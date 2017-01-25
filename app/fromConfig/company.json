@@ -1,0 +1,47 @@
+{
+  "companyName": {
+    "type": "String",
+    "description": "Enter companyName",
+    "modelValue": ""
+  },
+  "streetAddress": {
+    "type": "String",
+    "description": "Enter streetAddress",
+    "modelValue": ""
+  },
+  "city": {
+    "type": "String",
+    "description": "Enter city",
+    "modelValue": ""
+  },
+  "Street": {
+    "type": "String",
+    "description": "Enter Street",
+    "modelValue": ""
+  },
+  "ZipCode": {
+    "type": "String",
+    "description": "Enter ZipCode",
+    "modelValue": ""
+  },
+  "Phone": {
+    "type": "String",
+    "description": "Enter Phone",
+    "modelValue": ""
+  },
+  "Fax": {
+    "type": "String",
+    "description": "Enter Fax",
+    "modelValue": ""
+  },
+  "webSite": {
+    "type": "String",
+    "description": "Enter webSite",
+    "modelValue": ""
+  },
+  "Logo": {
+    "type": "String",
+    "description": "Enter Logo",
+    "modelValue": ""
+  }
+}

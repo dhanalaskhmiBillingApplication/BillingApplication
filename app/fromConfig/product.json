@@ -1,0 +1,22 @@
+{
+  "ProductName": {
+    "type": "String",
+    "description": "Enter ProductName",
+    "modelValue": ""
+  },
+  "ProductDescription": {
+    "type": "String",
+    "description": "Enter Product Description",
+    "modelValue": ""
+  },
+  "ProductAvailableQty": {
+    "type": "Number",
+    "description": "Enter Product Available Qty",
+    "modelValue": ""
+  },
+  "unitPrice": {
+    "type": "Number",
+    "description": "Enter Product unit Price ",
+    "modelValue": ""
+  }
+}

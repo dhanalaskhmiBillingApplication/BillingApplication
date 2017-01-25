@@ -1,0 +1,59 @@
+{
+  "CustomerTinNumber": {
+    "type": "String",
+    "description": "Enter Customer Tin Number",
+    "modelValue": "",
+    "readonly":false
+  },
+  "CustomerName": {
+    "type": "String",
+    "description": "Enter Customer  Name",
+    "modelValue": "",
+    "readonly":true
+  },
+  "CustomerLogo": {
+    "type": "String",
+    "description": "Choose  Customer Logo",
+    "modelValue": "",
+    "readonly":false
+  },
+    "CompanyName": {
+      "type": "String",
+      "description": "Enter Company Name",
+      "modelValue": "",
+      "readonly":false
+    },
+    "StreetAddress": {
+      "type": "String",
+      "description": "Enter Street Address  ",
+      "modelValue": "",
+      "readonly":false
+    },
+    "City": {
+      "type": "String",
+      "description": "Enter city  ",
+      "modelValue": "",
+      "readonly":false
+    },
+    "State": {
+      "type": "String",
+      "description": "Enter State  ",
+      "modelValue": "",
+      "readonly":false
+    },
+    "ZipCode": {
+      "type": "String",
+      "description": "Enter ZipCode  ",
+      "modelValue": "",
+      "readonly":false
+    },
+    "PhoneNumber": {
+      "type": "String",
+      "description": "Enter Phone Number  ",
+      "modelValue": "",
+      "readonly":false
+    }
+
+
+
+}

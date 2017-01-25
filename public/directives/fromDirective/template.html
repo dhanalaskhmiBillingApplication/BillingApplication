@@ -1,0 +1,29 @@
+
+<form  name="userForm"  class="w3-container">
+    <div ng-repeat="formEle in jsonConfig" ng-if="formEle.type==='String'">
+        <div class="form-group" ng-if="formEle.type==='String'">
+            <label>{{formEle.name}}</label>
+            <input class="form-control"  placeholder={{formEle.description}}  ng-model="formEle.modelValue" type="text" >
+        </div>
+        <div class="form-group" ng-if="formEle.type==='Number'">
+            <label>{{formEle.name}}</label>
+            <input class="form-control"  placeholder={{formEle.description}}  ng-model="formEle.modelValue" type="text"
+                   onkeypress='return (event.charCode >= 48 && event.charCode <= 57)|| event.charCode <= 8 '>
+        </div>
+        <div ng-if="formEle.type==='file'">
+            <input type="file"  ng-model="formEle.modelValue"  />
+        </div>
+
+
+    </div>
+
+
+
+
+</form>
+
+
+
+
+
+

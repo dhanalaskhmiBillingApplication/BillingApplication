@@ -1,0 +1,207 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="panel-body">
+            <div class="container">
+                <div class="row col-md-7 col-md-offset-2 custyle">
+                    <table class="table table-striped custab">
+                        <thead>
+
+                        <div class="row">
+                            <div class="col-md-2 ">
+                                <a href="#" data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary btn-xs pull-left" id=""><b>+</b> Add client</a>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#" class="btn btn-primary btn-xs pull-left"><b>+</b> Remove client</a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary btn-xs pull-left"><b>+</b> Delete client</a>
+                            </div>
+                            <div class="col-md-3">
+                                <button href="#myModal" id="openBtn" data-toggle="modal" class="btn btn-primary btn-xs pull-left">Modal</button>
+
+                            </div>
+                            <div class="col-md-3">
+                                <button href="#squarespaceModal" id="openBtn1" data-toggle="modal" class="btn btn-primary btn-xs pull-left">Modal</button>
+
+                            </div>
+                        </div>
+                </div>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Parent ID</th>
+                    <th>hsg</th>
+                    <th>gg</th>
+                    <th class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>News</td>
+                    <td>News Cate</td>
+                    <td>gghhghh</td>
+                    <td>hghg</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Products</td>
+                    <td>Main Products</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Blogs</td>
+                    <td>Parent Blogs</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Blogs</td>
+                    <td>Parent Blogs</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Blogs</td>
+                    <td>Parent Blogs</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                </tr>
+                </table>
+            </div>
+        </div>
+</section>
+</div>
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title">Big Title</h3>
+            </div>
+            <div class="modal-body">
+                <h5 class="text-center">Hello. Some text here.</h5>
+                <table class="table table-striped" id="tblGrid">
+                    <thead id="tblHead">
+                    <tr>
+                        <th>Location</th>
+                        <th>Points</th>
+                        <th class="text-right">Mean</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>Long Island, NY, USA</td>
+                        <td>3</td>
+                        <td class="text-right">45001</td>
+                    </tr>
+                    <tr><td>Chicago, Illinois, USA</td>
+                        <td>5</td>
+                        <td class="text-right">76455</td>
+                    </tr>
+                    <tr><td>New York, New York, USA</td>
+                        <td>10</td>
+                        <td class="text-right">39097</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="form-group">
+                    <input type="button" class="btn btn-warning btn-sm pull-right" value="Reset">
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3  class="modal-title" id="lineModalLabel">My Modal</h3>
+            </div>
+            <div class="modal-body">
+
+                <!-- content goes here -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- Your Page Content Here -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+            Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>   <a href="#">Company</a>.</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+</div>

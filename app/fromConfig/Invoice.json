@@ -1,0 +1,38 @@
+{
+  "InvoiceNumber": {
+    "type": "Number",
+    "description": "Enter Invoice Number",
+    "modelValue": ""
+  },
+  "InvoiceRaisedDate": {
+    "type": "Date",
+    "description": "Enter Invoice Raised  Date",
+    "modelValue": ""
+  },
+  "InvoiceDueDate": {
+    "type": "Date",
+    "description": "Enter Invoice Due Date",
+    "modelValue": ""
+  },
+  "clientName": {
+    "type": "String",
+    "description": "Enter client Name",
+    "modelValue": ""
+  },
+  "productOrderDetails":{
+    "productName": {
+      "type": "String",
+      "description": "Enter Product Name",
+      "modelValue": ""
+    },
+    "Quantity": {
+      "type": "Number",
+      "description": "Enter Quantity",
+      "modelValue": ""
+    }
+
+
+
+  }
+
+}

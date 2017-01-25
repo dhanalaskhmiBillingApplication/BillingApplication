@@ -1,0 +1,37 @@
+{
+  "CompanyName": {
+    "type": "String",
+    "description": "Enter Customer  Name",
+    "modelValue": ""
+  },
+  "CompanyShippingAddress": {
+    "type": "String",
+    "description": "Enter Shipping Address",
+    "modelValue": ""
+  },
+  "ShippingStreetAddress": {
+    "type": "String",
+    "description": "Enter Street Address ",
+    "modelValue": ""
+  },
+  "ShippingCity": {
+    "type": "String",
+    "description": "Enter Shipping City  ",
+    "modelValue": ""
+  },
+  "ShippingState": {
+    "type": "String",
+    "description": "Enter Shipping State  ",
+    "modelValue": ""
+  },
+  "ShippingZipCode": {
+    "type": "String",
+    "description": "Enter Shipping ZipCode  ",
+    "modelValue": ""
+  },
+  "ShippingPhone Number": {
+    "type": "String",
+    "description": "Enter Shipping Phone Number  ",
+    "modelValue": ""
+  }
+}
