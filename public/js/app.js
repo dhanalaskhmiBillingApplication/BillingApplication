@@ -59,16 +59,17 @@ billApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/Products.html',
             controller:'productCtrl'
         })
+        .state('application.invoice', {
+            url: "/invoice",
+            templateUrl: 'templates/Invoice.html',
+            controller:'invoiceCtrl'
+        })
         /*.state('application.settings', {
             url: "/settings",
             templateUrl: 'templates/settings.html',
             controller:'settingsCtrl'
         })
-        .state('application.invoice', {
-            url: "/invoice",
-            templateUrl: 'templates/invoice.html',
-            controller:'invoiceCtrl'
-        })*/
+        */
     $urlRouterProvider.otherwise("/application");
 });
 

@@ -33,7 +33,8 @@
     scope = {
       options: '=', // the options array
       ngModel: '=', // the model to bind to,,
-      ngDisabled: '='
+      ngDisabled: '=',
+      watchmodel:'='
     };
 
     /*
@@ -42,6 +43,7 @@
      */
     watchCollection = [];
     Object.keys(scope).forEach(function (scopeName) {
+      console.log(scopeName)
       watchCollection.push(scopeName);
     });
 

@@ -1,7 +1,7 @@
 
 <form  name="userForm"  class="w3-container">
 
-    <div ng-repeat="formEle in jsonConfig" ng-if="formEle.type==='String'">
+    <div ng-repeat="formEle in jsonConfig">
         <div class="form-group" ng-if="formEle.type==='String'">
             <label>{{formEle.name}}</label>
             <input class="form-control"  placeholder={{formEle.description}}  ng-model="formEle.modelValue" type="text" >
