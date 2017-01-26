@@ -22,7 +22,7 @@
                                 <a href="#" data-toggle="modal" data-target="#addInvoiceProduct" class="btn btn-primary btn-xs pull-left"  ng-click="getAllProductNameForDropDown()"><b>+</b> Add product</a>
                             </div>
                             <div class="col-md-2 ">
-                                <a href="#" data-toggle="modal" data-target="#addClient" class="btn btn-primary btn-xs pull-left" ><b>+</b> print Invoice</a>
+                                <a href="#" data-toggle="modal" data-target="#previewInvoice" class="btn btn-primary btn-xs pull-left" ><b>+</b> Preview Invoice</a>
                             </div>
 
                         </div>
@@ -152,6 +152,145 @@
                 </form>
 
             </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<div class="modal fade" id="previewInvoice" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3  class="modal-title" id="previewInvoiceLabel">Edit Products </h3>
+            </div>
+            <div class="modal-body" id="formConfirmation">
+
+                <!--table start-->
+                <div class="container"  >
+                    <div class="privacy">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h1><strong>Dhanalakshmi Bill Test Database</strong></h1></div>
+                                <div class="col-md-2 col-sm-offset-4">
+                                    <h4>Invoice</h4>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <h4>14</h4>
+                                </div>
+                            </div><!--end of first row-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <address>
+                                        <br/>
+                                        #27 magadi road Blore:560023<br/>
+                                        ph:78878798989
+
+                                    </address>
+                                </div>
+                                <div class="col-md-3 col-sm-offset-4">
+                                    <h1 style="background-color:orange;color:white; padding:4px; text-align:center;">AMOUNT DATE &nbsp &nbsp &nbsp &nbsp  $14</h1>
+                                    <p>Invoice Date &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 15/01/2017 </p>
+                                    <p>Invoice Date &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 15/01/2017 </p>
+                                </div>
+                            </div><!--end of second row-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <br/><br/>
+                                    <p><b>Bill no:</b> hghhjj hkjhn jyuyh hgfgvbn hghgfc </p>
+                                </div>
+                                <div class="col-md-3 col-sm-offset-4">
+                                    <br/><br/>
+                                    <p><b>ship Box:</b> ghbhjbh hhbb  uugg kkkgb hagvb ajjbh xhhsk</p>
+                                </div>
+                            </div>
+
+                        </div><!--end of third row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class = "table table-bordered">
+                                    <br/>
+                                    <br/>
+
+                                    <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Product</th>
+                                        <th>quality</th>
+                                        <th>Price</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>Tanmay</td>
+                                        <td>Bangalore</td>
+                                        <td>560001</td>
+                                        <td>560001</td>
+                                        <td>560001</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sachin</td>
+                                        <td>Mumbai</td>
+                                        <td>400003</td>
+                                        <td>560001</td>
+                                        <td>560001</td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>Uma</td>
+                                        <td>Pune</td>
+                                        <td>411027</td>
+                                        <td>560001</td>
+                                        <td>560001</td>
+
+                                    </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div><!--end of fourth row-->
+                        <div class="row">
+                            <div class="col-md-4 ">
+
+                            </div>
+                            <div class="col-md-3 col-sm-offset-4">
+
+                            </div>
+                        </div><!--end of fifth row-->
+                    </div>
+
+
+                </div>
+                <!--/table end-->
+
+
+
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+                <div class="w3-container " style="float: right">
+                    <button ng-click="saveInvoice()" onclick="generatePDF()">save Invoice</button>
+                </div>
+            </div>
+
+        </div>
 
 
 

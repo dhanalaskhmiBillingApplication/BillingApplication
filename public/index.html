@@ -84,10 +84,25 @@
 <!--multi select-->
 <script src="style/scripts/lib/choosenDropDown/angular-chosen.min.js"></script>
 <script src="style/scripts/lib/choosenDropDown/chosen.jquery.min.js"></script>
+
+<link rel="stylesheet" href="style/css/billTemplateCss.css">
+
 <link rel="stylesheet" href="style/scripts/lib/choosenDropDown/chosen.min.css">
+<!--pdf-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
+<script>
+    var generatePDF = function() {
+        kendo.drawing.drawDOM($("#formConfirmation")).then(function(group) {
+            kendo.drawing.pdf.saveAs(group, "Converted PDF.pdf");
+        });
+    }
+</script>
 
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
+
+
 
 
 </body>

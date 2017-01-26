@@ -1,0 +1,28 @@
+
+.privacy{
+	background-color: #fff;
+    border: 1px solid #e9e9ed;
+    border-radius: 8px;
+    padding: 36px 40px 0;
+    max-width: 1500px;
+    margin: auto;
+
+}
+.privacy p{
+	color: #424242;
+	font-size: 20px
+	font-family: Times New Roman;
+	text-align: justify;
+}
+.privacy h1{
+	font-family: Garamond;
+    font-size: 15px;
+    color: darkorange;
+    font-style: bold;
+}
+.h2{
+    background-color: orange;
+}
+thead{
+    background-color: orange;
+}
