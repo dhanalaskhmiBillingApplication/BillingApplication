@@ -124,6 +124,7 @@ billApp.controller("productCtrl", function ($scope,productService,fromService) {
 
     function init(){
         $scope.getProductDetailsByRange(0)
+        $scope.getConfigForProductSaveFrom();
     }
     init();
 })

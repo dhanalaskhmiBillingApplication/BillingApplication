@@ -9,6 +9,7 @@
     "description": "Enter Product Description",
     "modelValue": ""
   },
+
   "ProductAvailableQty": {
     "type": "Number",
     "description": "Enter Product Available Qty",

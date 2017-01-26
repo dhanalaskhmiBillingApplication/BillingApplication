@@ -42,13 +42,13 @@
       "readonly":false
     },
     "ZipCode": {
-      "type": "String",
+      "type": "Number",
       "description": "Enter ZipCode  ",
       "modelValue": "",
       "readonly":false
     },
     "PhoneNumber": {
-      "type": "String",
+      "type": "Number",
       "description": "Enter Phone Number  ",
       "modelValue": "",
       "readonly":false

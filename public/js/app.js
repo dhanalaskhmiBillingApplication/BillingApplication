@@ -54,12 +54,12 @@ billApp.config(function ($stateProvider, $urlRouterProvider) {
               controller:'clientCtrl'
         })
 
-        /* .state('application.Products', {
+         .state('application.Products', {
             url: "/Products",
             templateUrl: 'templates/Products.html',
             controller:'productCtrl'
         })
-        .state('application.settings', {
+        /*.state('application.settings', {
             url: "/settings",
             templateUrl: 'templates/settings.html',
             controller:'settingsCtrl'

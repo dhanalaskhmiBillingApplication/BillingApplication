@@ -14,4 +14,5 @@ Repository:BillingApplication
 
 client
 
-company name is unquie
+company name is required
+number validation
