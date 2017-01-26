@@ -111,13 +111,12 @@ router.get('/ClientDetails/:clientId', function (req, res) {
 
 
 router.post('/ClientDetails/name', function (req, res) {
-    clientDetailsModel.find({'CompanyName':req.body.CompanyName},function(err,result){
+
+    clientDetailsModel.find({'CompanyName':req.body.companyName},function(err,result){
         if(err){
             res.send(err)
             console.log(err.stack)
         }else{
-            console.log("999999999999999resultresultresult99999999999999999999")
-            console.log(result)
             res.send(result)
         }
 
