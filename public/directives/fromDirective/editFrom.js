@@ -8,15 +8,10 @@ var angularEditFromUI=angular.module('angularEditFromUI',[]);
 
 angularEditFromUI.directive('editFrom', function() {
 
-  /*  var link=function (scope, element, attrs) {
-
-
-    };*/
     return {
         scope: {
             jsonConfig:'='
         },
-       /* link: link,*/
         templateUrl:'./directives/fromDirective/editJsonTemplate.html'
     };
 });

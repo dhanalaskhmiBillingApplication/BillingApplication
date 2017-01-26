@@ -1,7 +1,7 @@
 /**
  * Created by dhanalakshmi on 25/1/17.
  */
-var dependencies = ['ui.router'];
+var dependencies = ['ui.router','angularFromUI','angularEditFromUI','angular.chosen'];
 var billApp = angular.module("billApp", dependencies);
 
 billApp.run(function(companyService,clientService,productService){
@@ -50,7 +50,8 @@ billApp.config(function ($stateProvider, $urlRouterProvider) {
         })
           .state('application.client', {
             url: "/client",
-            templateUrl: 'templates/client.html'
+            templateUrl: 'templates/client.html',
+              controller:'clientCtrl'
         })
 
         /* .state('application.Products', {

@@ -39,10 +39,6 @@ billApp.factory("clientService", function ($http) {
     }
 
     var getClientDetailsByName = function(clientName){
-        console.log("99999999999999999999999999999999999")
-        console.log(clientName)
-        console.log("99999999999999999999999999999999999")
-
         return $http.post('/ClientDetails/name',clientName);
     }
 
