@@ -12,13 +12,14 @@ billApp.controller("invoiceCtrl", function ($scope,clientService,productService)
     $scope.previewListView=false;
     $scope.InvoiceTable=true;
     $scope.saveToProductTable=function(productObj){
+        console.log("saveToProductTable")
+        console.log(productObj)
         for(var l=0;l<$scope.invoice.allProducts.length;l++){
-            console.log(productObj.qty)
-            if($scope.invoice.allProducts[l].ProductName===productObj.productSelected.ProductName){
+            if($scope.invoice.allProducts[l].ProductName===productObj.productSelected[0].ProductName){
                 var obj={}
                 obj.itemsData=$scope.invoice.allProducts[l];
                 obj.qty=productObj.qty
-
+                console.log(obj)
                 $scope.invoice.productList.push(obj)
             }
         }
@@ -79,7 +80,7 @@ billApp.controller("invoiceCtrl", function ($scope,clientService,productService)
         obj.CompanyName=clientName[0].CompanyName
         clientService.getClientDetailsByName(obj).then(function(res){
             console.log("88888888888888888")
-            console.log(res.data[0])
+            console.log(res.data)
             $scope.invoice.clientDetails = res.data[0];
         })
     }
@@ -95,8 +96,11 @@ billApp.controller("invoiceCtrl", function ($scope,clientService,productService)
         })
 
     }
+
+    //check this extra calls
     $scope.getAllProductNameForDropDown()
     $scope.getAllClientNameForDropDown()
+
     $scope.getAllProduct()
     $scope.previewProductList=function(){
 
