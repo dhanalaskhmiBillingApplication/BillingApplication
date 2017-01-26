@@ -43,10 +43,10 @@
                     <td class="text-center">
                     <td class="text-center">
                         <a class='btn btn-info btn-xs' href="#"
-                           ng-click="getClientDetailsById(client._id)" data-toggle="modal" data-target="#editClient">
+                            data-toggle="modal" data-target="#editInvoiceProduct" ng-click="editProduct(product.itemsData.ProductName)">
                             <span class="glyphicon glyphicon-edit" ></span> Edit
                         </a>
-                        <a href="#" class="btn btn-danger btn-xs"data-toggle="modal"  data-target="#deleteClient"  ng-click="setClientDetailsIdFroDelete(client._id)">
+                        <a href="#" class="btn btn-danger btn-xs"data-toggle="modal"  data-target="#deleteClient"  ng-click="deleteProduct(product.itemsData.ProductName)">
                         <span class="glyphicon glyphicon-remove">
                         </span> Del</a></td>
 
@@ -110,6 +110,45 @@
                     <button type="submit" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     <button type="submit" class="btn btn-default"  ng-click="saveToProductTable(productObj)">
                         Save</button>
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+<div class="modal fade" id="editInvoiceProduct" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3  class="modal-title" id="eidProductModalLabel">Edit Products </h3>
+            </div>
+            <div class="modal-body">
+                {{editObjDetails}}
+
+                    <div class="form-group" >
+                        <label>Product Qty</label>
+                        <input class="form-control"  placeholder="Enter product name"  ng-model="editObjDetails.ProductName" type="text" >
+                    </div>
+                     <div class="form-group" >
+                        <label>Product Qty</label>
+                        <input class="form-control"  placeholder="Enter product Quantity"  ng-model="editObjDetails.qty" type="text" >
+                    </div>
+
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-default"  ng-click="updateTable(productObj)">
+                        Update</button>
                 </form>
 
             </div>

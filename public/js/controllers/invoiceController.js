@@ -27,8 +27,7 @@ billApp.controller("invoiceCtrl", function ($scope,clientService,productService)
     }
     $scope.editProduct=function(productName){
         for(var l=0;l<$scope.invoice.productList.length;l++){
-            console.log(productName)
-            console.log($scope.invoice.productList[l].itemsData.ProductName)
+
             if($scope.invoice.productList[l].itemsData.ProductName===productName){
                 var editobj={}
                 editobj.ProductName=$scope.invoice.productList[l].itemsData.ProductName
@@ -47,8 +46,6 @@ billApp.controller("invoiceCtrl", function ($scope,clientService,productService)
     }
     $scope.updateTable=function(productObj){
         for(var l=0;l<$scope.invoice.allProducts.length;l++){
-            console.log(productObj.ProductName)
-            console.log(productObj.qty)
             if($scope.invoice.allProducts[l].ProductName===productObj.ProductName){
                 var obj={}
                 obj.itemsData=$scope.invoice.allProducts[l];
@@ -79,8 +76,6 @@ billApp.controller("invoiceCtrl", function ($scope,clientService,productService)
         var obj={}
         obj.CompanyName=clientName[0].CompanyName
         clientService.getClientDetailsByName(obj).then(function(res){
-            console.log("88888888888888888")
-            console.log(res.data)
             $scope.invoice.clientDetails = res.data[0];
         })
     }
